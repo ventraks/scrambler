@@ -1,0 +1,88 @@
+* {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.scrambler {
+  position: relative;
+  top: 200px;
+  margin: 0 auto 20px;
+  width: 480px;
+  min-width: 480px;
+  max-width: 480px;
+  background-color: #1E2632;
+  padding: 30px 0;
+  display: none;
+}
+
+.scrambler-splash {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.scrambler-splash .scrambler-hacker {
+  position: relative;
+  font-size: 55px;
+  margin-bottom: 30px;
+  left: 100px;
+}
+
+.scrambler-splash .scrambler-text {
+  position: relative;
+  top: 40px;
+  right: 28px;
+  font-weight: bold;
+}
+
+.scrambler .scrambler-find {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  user-select: none;
+  margin-top: 10px;
+}
+
+.scrambler .scrambler-find > div {
+  display: inline-block;
+}
+
+.scrambler .scrambler-timer {
+  text-align: center;
+  color: green;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.scrambler .scrambler-codes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: auto;
+}
+
+.scrambler .scrambler-codes > div {
+  flex: 1 0 10%;
+  margin: 7px 0;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.scrambler .scrambler-codes > div.red {
+  color: red;
+}
+
+.scrambler .scrambler-codes > div.green {
+  color: green;
+}
+
+.scrambler .scrambler-mirrored .scrambler-find > div,
+.scrambler .scrambler-mirrored .scrambler-codes > div {
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
